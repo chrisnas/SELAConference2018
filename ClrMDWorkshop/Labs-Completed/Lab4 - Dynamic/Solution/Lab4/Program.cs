@@ -82,7 +82,7 @@ namespace Lab4
                 {
                     for (int index = segment.m_low; index <= segment.m_high; index++)
                     {
-                        Console.WriteLine(segment.m_array[index]);
+                        Console.WriteLine((int)segment.m_array[index]);
                     }
 
                     segment = segment.m_next;
