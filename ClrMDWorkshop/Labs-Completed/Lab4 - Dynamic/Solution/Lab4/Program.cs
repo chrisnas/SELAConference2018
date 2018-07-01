@@ -56,9 +56,8 @@ namespace Lab4
                 {
                     if (bucket == null) continue;
 
-                    var key = (int)bucket.m_key;
-                    var address = (ulong)bucket.m_value;
-                    var value = heap.GetObjectType(address).GetValue(address) as string;
+                    var key = bucket.m_key;
+                    var value = bucket.m_value;
 
                     Console.WriteLine($"{key} = {value}");
                 }
@@ -82,7 +81,8 @@ namespace Lab4
                 {
                     for (int index = segment.m_low; index <= segment.m_high; index++)
                     {
-                        Console.WriteLine((int)segment.m_array[index]);
+                        var value = segment.m_array[index];
+                        Console.WriteLine(value);
                     }
 
                     segment = segment.m_next;
