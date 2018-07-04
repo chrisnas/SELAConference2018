@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestApplication"
         mc:Ignorable="d"
-        Title="Test Scenarios" Height="450" Width="600">
+        Title="Test Scenarios" Height="130" Width="400">
     <StackPanel>
       <Button x:Name="btnStringDuplicates" Click="btnStringDuplicates_Click">String duplicates</Button>
-      <Button x:Name="btnTimers">Timers</Button>
-      <Button x:Name="FullGC" Margin="0,30,0,0">Full GC</Button>
+      <Button x:Name="btnTimers" Click="btnTimers_Click">Timers</Button>
+      <Button x:Name="FullGC" Margin="0,30,0,0" Click="FullGC_Click">Full GC</Button>
     </StackPanel>
 </Window>
